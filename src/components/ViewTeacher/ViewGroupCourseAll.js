@@ -30,8 +30,8 @@ const ViewGroupCourse = (props) => {
     axios('https://educationservice.herokuapp.com/groupmajor')
       .then(response => {
         console.log(response.data)
-        setMajor(response.data);
-        setFilteredData(response.data);
+        setMajor(response.data.major);
+        setFilteredData(response.data.major);
       })
       .catch(error => {
         console.log('Error getting fake data: ' + error);
