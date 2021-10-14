@@ -32,7 +32,7 @@ const ViewInsertEduDetail = ({ id }) => {
     useEffect(() => {
                 axios.get("https://educationservice.herokuapp.com/Education/" + id)
                     .then((response) => {
-                        setEdu(response.data);
+                        setEdudetail(response.data);
                     });
             }, [id]);
 
@@ -114,6 +114,8 @@ const ViewInsertEduDetail = ({ id }) => {
             id_faculty: edudetail.id_faculty,
             id_education: edudetail.id_education,
             id_major: edudetail.id_major,
+            id_education: edu.id_education,
+
         }
         if (data['number_of_edu'] === "" || data['GPA'] === "" || data['id_curriculum'] === ""
             || data['note_condi'] === "" || data['id_course'] === "" || data['id_faculty'] === ""
@@ -243,10 +245,10 @@ const ViewInsertEduDetail = ({ id }) => {
                             <Col xs="6">
                                 <FormGroup>
                                     <Label for="id_education"></Label>
-                                    <Input type="select" name="id_education" id="id_education"
+                                    <Input type="hidden" name="id_education" id="id_education"
                                         onChange={handleInputChange} value={edudetail.id_education || ""}>
-                                    <option>***กรุณาเลือก***</option>
-                                      <option value={edu.id_education}>รับทราบ</option>
+                                    {/* <option>***กรุณาเลือก***</option>
+                                      <option value={edu.id_education}>รับทราบ</option> */}
                                     
                                     </Input>
 
