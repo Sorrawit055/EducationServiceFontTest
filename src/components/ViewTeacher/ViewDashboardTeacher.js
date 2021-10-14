@@ -11,35 +11,35 @@ const ViewDashboardTeacher = (props) => {
       name: 'มหาวิทยาลัย',
       href: '/Teacher/universityall',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        '',
       icon: LibraryIcon,
     },
     {
       name: 'คณะ',
       href: '/Teacher/facultyall',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      '',
       icon: OfficeBuildingIcon,
     },
     {
       name: 'สาขา',
       href: '/Teacher/courseall',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      '',
       icon: UserIcon,
     },
     {
       name: 'กลุ่มสาขา',
       href: '/Teacher/groupcourseall',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      '',
       icon: UsersIcon,
     },
     {
       name: 'หลักสูตร',
       href: '/Teacher/degreeall',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      '',
       icon: AcademicCapIcon,
     },
   ]
@@ -49,7 +49,7 @@ const ViewDashboardTeacher = (props) => {
       name: 'ข้อมูลการศึกษาต่อ',
       href: '/Teacher/educationall',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      '',
       icon: BookmarkAltIcon,
     },
   ]
@@ -59,7 +59,7 @@ const ViewDashboardTeacher = (props) => {
       name: 'ข้อมูลการศึกษาต่อของนักเรียน',
       href: '/Teacher/educationstudentall',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      '',
       icon: IdentificationIcon,
     },
   ]
