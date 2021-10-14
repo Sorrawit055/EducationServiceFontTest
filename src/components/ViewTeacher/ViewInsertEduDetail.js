@@ -244,7 +244,7 @@ const ViewInsertEduDetail = ({ id }) => {
                             <Col xs="6">
                                 <FormGroup>
                                     <Label for="id_education"></Label>
-                                    <Input type="text" name="id_education" id="id_education"
+                                    <Input type="hidden" name="id_education" id="id_education"
                                         onChange={handleInputChange} value={edudetail.id_education || ""}>
                                     {/* <option>***กรุณาเลือก***</option>
                                       <option value={edudetail.id_education}>รับทราบ</option> */}
