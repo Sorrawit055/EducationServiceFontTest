@@ -114,7 +114,6 @@ const ViewInsertEduDetail = ({ id }) => {
             id_faculty: edudetail.id_faculty,
             id_education: edudetail.id_education,
             id_major: edudetail.id_major,
-            id_education: edu.id_education,
 
         }
         if (data['number_of_edu'] === "" || data['GPA'] === "" || data['id_curriculum'] === ""
@@ -245,10 +244,10 @@ const ViewInsertEduDetail = ({ id }) => {
                             <Col xs="6">
                                 <FormGroup>
                                     <Label for="id_education"></Label>
-                                    <Input type="hidden" name="id_education" id="id_education"
+                                    <Input type="text" name="id_education" id="id_education"
                                         onChange={handleInputChange} value={edudetail.id_education || ""}>
                                     {/* <option>***กรุณาเลือก***</option>
-                                      <option value={edu.id_education}>รับทราบ</option> */}
+                                      <option value={edudetail.id_education}>รับทราบ</option> */}
                                     
                                     </Input>
 
