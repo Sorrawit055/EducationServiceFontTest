@@ -242,6 +242,10 @@ function Index() {
                           <h2 className="text-lg flex-warp font-bold leading-7 text-gray-900 sm:text-xl pb-3 border-b"style={{ width: '23rem',height:'7rem' }}>{Post.new_name}</h2>
                           <div className="">
                           <div className="mt-2 flex items-center text-sm text-gray-500">
+                              <BriefcaseIcon className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
+                              รายละเอียด : {Post.new_sub_detail || "ประชาสัมพันธ์ทั่วไป"}
+                            </div>
+                          <div className="mt-2 flex items-center text-sm text-gray-500">
                               <LocationMarkerIcon className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
                               เริ่ม : {Post.new_date_open || "ไม่ระบุวัน"}
                             </div>
