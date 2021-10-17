@@ -3,6 +3,8 @@ import Pagination from './pagination/paginationnewindex';
 import Paginations from './pagination/paginationnewindexstudent';
 import ViewDashBoardAdmin from './ViewAdmin/ViewDashBoardAdmin';
 import ViewDashboardTeacher from './ViewTeacher/ViewDashboardTeacher';
+import "../index.css"
+
 
 import {
   BriefcaseIcon,
@@ -177,8 +179,6 @@ function Index() {
     updateEducationdata();
   }, []);
 
-
-
   if (session.id === null) {
     return (
       <div>
@@ -212,10 +212,19 @@ function Index() {
             </div>
           </div> */}
               </div>
-              <SilderIndex />
-            </div>)
+           
+            </div>
+                
+            )
         })}
-        <div class="wow fadeInUpBig bg-fixed w-full h-72 md:h-96 bg-center overflow-y-1 shadow-inner" style={{ backgroundImage: `url("https://i.pinimg.com/originals/c9/7b/d3/c97bd3d324813cbf8cf36315c35aef63.jpg")`, filter: 'blur(0px)' }}>
+                      <div className="bg-yellow-600 mx-auto">
+           <div class="container">
+   <SilderIndex />
+   </div>
+   <div className="pt-36 md:pt-52">
+</div>
+   </div>
+   <div class="wow fadeInUpBig bg-fixed w-full h-72 md:h-96 bg-center overflow-y-1 shadow-inner" style={{ backgroundImage: `url("https://i.pinimg.com/originals/9a/05/4f/9a054f2b6398300e472f34a3b4f71984.jpg")`, filter: 'blur(0px)' }}>
           <h2 className="flex py-32 md:py-44 z-50 font-semibold justify-center">ประชาสัมพันธ์</h2>
         </div>
         <div class="container-fluid mt-5">
@@ -225,24 +234,20 @@ function Index() {
             {currentPosts.map((Post) => {
               return (
                 <div class="col mb-4">
-                  <Card className="span3 wow bounceInUp" data-wow-iteration="5" data-wow-duration="0.15s" class="span3 wow flip" style={{visibility: "hidden", animationDuration: "0.15s", animationIterationCount: 5, animationName: "none"}}>
-                    <CardImg width="10" className="mx-auto" src={Post.new_image || 'https://via.placeholder.com/604x317'} />
+                  <Card raised className="mx-auto" data-wow-iteration="5" data-wow-duration="0.15s" class="span3 wow flip" style={{visibility: "hidden", animationDuration: "0.15s", animationIterationCount: 5, animationName: "none"}}style={{ width: '25rem',height:'35rem' }}>
+                    <CardImg width="100" className="mx-auto" src={Post.new_image || 'https://via.placeholder.com/604x317'} style={{ width: '15rem',height:'16rem' }}/>
                     <CardBody>
                       <div className="lg:items-center lg:justify-between">
                         <div className="flex-1 min-w-0">
-                          <h2 className="text-lg flex-warp font-bold leading-7 text-gray-900 sm:text-xl pb-3 border-b">{Post.new_name}</h2>
+                          <h2 className="text-lg flex-warp font-bold leading-7 text-gray-900 sm:text-xl pb-3 border-b"style={{ width: '23rem',height:'7rem' }}>{Post.new_name}</h2>
                           <div className="">
-                            <div className="mt-2 flex items-center text-sm text-gray-500">
-                              <BriefcaseIcon className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
-                              รายละเอียด : {Post.new_sub_detail || "ประชาสัมพันธ์ทั่วไป"}
-                            </div>
-                            <div className="mt-2 flex items-center text-sm text-gray-500">
+                          <div className="mt-2 flex items-center text-sm text-gray-500">
                               <LocationMarkerIcon className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
-                              เริ่มกิจกรรม : {Post.new_date_open || "ไม่ระบุวัน"}
+                              เริ่ม : {Post.new_date_open || "ไม่ระบุวัน"}
                             </div>
                              <div className="mt-2 flex items-center text-sm text-gray-500">
                               <LocationMarkerIcon className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
-                              จบกิจกรรม : {Post.new_date_close || "ไม่ระบุวัน"}
+                              สิ้นสุด : {Post.new_date_close || "ไม่ระบุวัน"}
                             </div>
                           </div>
                         </div>
@@ -318,10 +323,18 @@ function Index() {
         </div>
       </div> */}
               </div>
-              <SilderIndex />
             </div>)
         })}
-           <div class="wow fadeInUpBig bg-fixed w-full h-72 md:h-96 bg-center overflow-y-1 shadow-inner" style={{ backgroundImage: `url("https://i.pinimg.com/originals/c9/7b/d3/c97bd3d324813cbf8cf36315c35aef63.jpg")`, filter: 'blur(0px)' }}>
+        
+        <div className="bg-yellow-600 mx-auto">
+           <div class="container">
+   <SilderIndex />
+   </div>
+   <div className="pt-36 md:pt-52">
+</div>
+   </div>
+   <div class="wow fadeInUpBig bg-fixed w-full h-72 md:h-96 bg-center overflow-y-1 shadow-inner" style={{ backgroundImage: `url("https://i.pinimg.com/originals/9a/05/4f/9a054f2b6398300e472f34a3b4f71984.jpg")`, filter: 'blur(0px)' }}>
+
           <h2 className="flex py-32 md:py-44 z-50 font-semibold justify-center">ประชาสัมพันธ์</h2>
         </div>
         <div class="container-fluid mt-5">
@@ -330,12 +343,12 @@ function Index() {
             {currentPosts.map((Post) => {
               return (
                 <div class="col mb-4">
-                  <Card>
-                    <CardImg width="10" className="mx-auto" src={Post.new_image || 'https://via.placeholder.com/604x317'} />
+                  <Card raised className="mx-auto" data-wow-iteration="5" data-wow-duration="0.15s" class="span3 wow flip" style={{visibility: "hidden", animationDuration: "0.15s", animationIterationCount: 5, animationName: "none"}}style={{ width: '25rem',height:'35rem' }}>
+                    <CardImg width="100" className="mx-auto" src={Post.new_image || 'https://via.placeholder.com/604x317'} style={{ width: '15rem',height:'16rem' }}/>
                     <CardBody>
                       <div className="lg:items-center lg:justify-between">
                         <div className="flex-1 min-w-0">
-                          <h2 className="text-lg flex-warp font-bold leading-7 text-gray-900 sm:text-xl pb-3 border-b">{Post.new_name}</h2>
+                          <h2 className="text-lg flex-warp font-bold leading-7 text-gray-900 sm:text-xl pb-3 border-b"style={{ width: '23rem',height:'7rem' }}>{Post.new_name}</h2>
                           <div className="">
                             <div className="mt-2 flex items-center text-sm text-gray-500">
                               <BriefcaseIcon className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
@@ -343,11 +356,11 @@ function Index() {
                             </div>
                             <div className="mt-2 flex items-center text-sm text-gray-500">
                               <LocationMarkerIcon className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
-                              เริ่มกิจกรรม : {Post.new_date_open || "ไม่ระบุวัน"}
+                              เริ่ม : {Post.new_date_open || "ไม่ระบุวัน"}
                             </div>
                              <div className="mt-2 flex items-center text-sm text-gray-500">
                               <LocationMarkerIcon className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
-                              จบกิจกรรม : {Post.new_date_close || "ไม่ระบุวัน"}
+                              สิ้นสุด : {Post.new_date_close || "ไม่ระบุวัน"}
                             </div>
                           </div>
                         </div>

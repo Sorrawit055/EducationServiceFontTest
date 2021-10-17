@@ -40,7 +40,7 @@ const ViewEducationStudent = (props) => {
             <Col>
               <FormGroup>
                 <Label for="id_university">ชื่อมหาวิทยาลัย</Label>
-                <Input type="select" className="text-center" name="name_uni" id="name_uni" placeholder="กรุณาใส่ชื่อมหาลัยที่จะค้นหา" onChange={(event) => handleSearch(event)}>
+                <Input type="select"  name="name_uni" id="name_uni" placeholder="กรุณาใส่ชื่อมหาลัยที่จะค้นหา" onChange={(event) => handleSearch(event)}>
                   <option value="">เลือกมหาลัยที่ค้นหา</option>
                   {university.map((university) => {
                     return (
@@ -59,21 +59,22 @@ const ViewEducationStudent = (props) => {
           {filteredData.map((value) => {
             return (
               <div class="col mb-4">
-                <Card>
-                  <CardBody>
+                <Card style={{ width: '35rem',height:'30rem' }}>
+                  <CardBody >
                     <center><CardTitle tag="h5">{value.name_uni}</CardTitle>   </center>
                   </CardBody>
-                  <CardBody>
+                  <CardBody style={{ width: '35rem',height:'40rem' }}>
                     <div className="">
-                      <img className="mx-auto py-auto" width="30%" src={value.logo_uni || 'https://via.placeholder.com/150'} alt="ยังไม่ได้อัพเดตตราประจำหมหาลัย" />
+                      <img className="mx-auto py-auto" src={value.logo_uni || 'https://via.placeholder.com/150'} alt="ยังไม่ได้อัพเดตตราประจำหมหาลัย" style={{ width: '10rem',height:'10rem' }}/>
                     </div>
                   </CardBody>
-                  <CardBody>
+                  <CardBody style={{ width: '35rem',height:'25rem' }}>
                     <CardTitle className="description">{value.detail_uni}</CardTitle>
                   </CardBody>
-                  <FormGroup className="mx-auto">
-                    <Button href={value.url_uni} target="_blank">ดูรายละเอียด</Button>
-                  </FormGroup>
+                  <CardBody style={{ width: '35rem',height:'25rem' }}>
+                  <FormGroup className="mx-auto" >
+                    <center><Button href={value.url_uni} target="_blank">ดูรายละเอียด</Button>   </center>
+                  </FormGroup></CardBody>
                 </Card>
               </div>
             );

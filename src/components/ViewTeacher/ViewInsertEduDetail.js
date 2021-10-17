@@ -221,8 +221,8 @@ const ViewInsertEduDetail = ({ id }) => {
                                 </FormGroup></Col>
                             <Col xs="6">
                                 <FormGroup>
-                                    <Label for="GPA">เกรดขั้นต่ำ</Label>
-                                    <Input type="text" name="GPA" id="GPA" placeholder="กรุณากำหนด GPA" value={edudetail.GPA || ""}
+                                    <Label for="GPAX">เกรดขั้นต่ำ</Label>
+                                    <Input type="text" name="GPA" id="GPA" placeholder="กรุณากำหนดเกรดขั้นต่ำ" value={edudetail.GPA || ""}
                                         onChange={handleInputChange}>
                                     </Input>
                                 </FormGroup></Col>
