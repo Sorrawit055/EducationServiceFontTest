@@ -59,19 +59,19 @@ const ViewEducationStudent = (props) => {
           {filteredData.map((value) => {
             return (
               <div class="col mb-4">
-                <Card style={{ width: '35rem',height:'30rem' }}>
+                <Card >
                   <CardBody >
-                    <center><CardTitle tag="h5">{value.name_uni}</CardTitle>   </center>
+                    <center><CardTitle tag="h5"><b>{value.name_uni}</b></CardTitle>   </center>
                   </CardBody>
-                  <CardBody style={{ width: '35rem',height:'40rem' }}>
+                  <CardBody >
                     <div className="">
-                      <img className="mx-auto py-auto" src={value.logo_uni || 'https://via.placeholder.com/150'} alt="ยังไม่ได้อัพเดตตราประจำหมหาลัย" style={{ width: '10rem',height:'10rem' }}/>
+                      <img className="mx-auto py-auto" src={value.logo_uni || 'https://via.placeholder.com/150'} alt="ยังไม่ได้อัพเดตตราประจำหมหาลัย" style={{ width: '8rem',height:'9rem' }}/>
                     </div>
                   </CardBody>
-                  <CardBody style={{ width: '35rem',height:'25rem' }}>
+                  <CardBody >
                     <CardTitle className="description">{value.detail_uni}</CardTitle>
                   </CardBody>
-                  <CardBody style={{ width: '35rem',height:'25rem' }}>
+                  <CardBody >
                   <FormGroup className="mx-auto" >
                     <center><Button href={value.url_uni} target="_blank">ดูรายละเอียด</Button>   </center>
                   </FormGroup></CardBody>

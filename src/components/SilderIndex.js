@@ -58,7 +58,7 @@ const SilderIndex = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <center><img src={item.image_carousel} alt={item.altText}/></center>
+        <center><img src={item.image_carousel} alt={item.altText} style={{ width: '55rem',height:'30rem' }}/></center>
         <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
     );

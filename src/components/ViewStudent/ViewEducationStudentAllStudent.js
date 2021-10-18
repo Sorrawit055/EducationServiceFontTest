@@ -235,7 +235,7 @@ const ViewEducationStudentAllStudent = () => {
             return (
               <div class="col mb-4">
                 <Card>
-                  <CardImg width="10" className="mx-auto" src={country.image || 'https://via.placeholder.com/604x317'}style={{ width: '40rem',height:'16rem' }} />
+                  <CardImg width="10" className="mx-auto" src={country.image || 'https://via.placeholder.com/604x317'} />
 
                   <CardBody>
                     <div className="lg:items-center lg:justify-between">
