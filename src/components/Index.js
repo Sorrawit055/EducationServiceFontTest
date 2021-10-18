@@ -218,9 +218,9 @@ function Index() {
             )
         })}
                       <div className="bg-yellow-600 mx-auto">
-           <div class="container">
+          
    <SilderIndex />
-   </div>
+ 
    <div className="pt-36 md:pt-52">
 </div>
    </div>
@@ -234,12 +234,12 @@ function Index() {
             {currentPosts.map((Post) => {
               return (
                 <div class="col mb-4">
-                  <Card raised className="mx-auto" data-wow-iteration="5" data-wow-duration="0.15s" class="span3 wow flip" style={{visibility: "hidden", animationDuration: "0.15s", animationIterationCount: 5, animationName: "none"}}style={{ width: '25rem',height:'35rem' }}>
+                  <Card raised className="mx-auto" data-wow-iteration="5" data-wow-duration="0.15s" class="span3 wow flip" style={{visibility: "hidden", animationDuration: "0.15s", animationIterationCount: 5, animationName: "none"}}style={{ width: '20rem',height:'35rem' }}>
                     <CardImg width="100" className="mx-auto" src={Post.new_image || 'https://via.placeholder.com/604x317'} style={{ width: '15rem',height:'16rem' }}/>
                     <CardBody>
                       <div className="lg:items-center lg:justify-between">
                         <div className="flex-1 min-w-0">
-                          <h2 className="text-lg flex-warp font-bold leading-7 text-gray-900 sm:text-xl pb-3 border-b"style={{ width: '23rem',height:'7rem' }}>{Post.new_name}</h2>
+                          <h2 className="text-lg flex-warp font-bold leading-7 text-gray-900 sm:text-xl pb-3 border-b"style={{ width: '17rem',height:'7rem' }}>{Post.new_name}</h2>
                           <div className="">
                           <div className="mt-2 flex items-center text-sm text-gray-500">
                               <BriefcaseIcon className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
