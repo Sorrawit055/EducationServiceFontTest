@@ -212,10 +212,10 @@ function Index() {
             </div>
           </div> */}
               </div>
-              <div className="pt-36 md:pt-52 bg-yellow-600 mx-auto">
-              <div className="mx-auto sm:text-center lg:text-left pb-12 md:pb-28">
-   <SilderIndex />
-</div>
+   <div className="mx-auto sm:text-center lg:text-left pb-12 md:pb-28">
+        <Col sm="12" md={{ size: 8, offset: 2 }}>   <SilderIndex />
+</Col>
+   
    <div className="pt-36 md:pt-52">
 </div>
    </div>

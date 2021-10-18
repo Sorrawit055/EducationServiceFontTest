@@ -129,6 +129,7 @@ const ViewEducationStudentAllStudent = () => {
   return (
     
     <div class="mt-32">
+      
       <div className="flex flex-col max-w-7xl mx-auto">
         <div className="text-center mx-auto">
           <h3 className="pb-4">ค้นหาข้อมูลการรับสมัครเข้าศึกษาต่อ</h3>
