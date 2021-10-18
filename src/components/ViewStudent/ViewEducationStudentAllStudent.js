@@ -127,17 +127,18 @@ const ViewEducationStudentAllStudent = () => {
 
 
   return (
+    
     <div class="mt-32">
       <div className="flex flex-col max-w-7xl mx-auto">
         <div className="text-center mx-auto">
           <h3 className="pb-4">ค้นหาข้อมูลการรับสมัครเข้าศึกษาต่อ</h3>
-          <hr style={{width:500}} />
+          <hr  />
           <Row>
           <Col xs="6">
             <FormGroup>
               <Label for="id_university">ชื่อมหาวิทยาลัย</Label>
               <Input type="text" list="data1" placeholder="กรุณาใส่ข้อมูล" name="name_uni" id="name_uni" value={filterInput.name_uni}onChange={e => handleFilterCountries(e)} style={{textAlihn:'center',color:'green'}} />
-<datalist id="data1" style={{ width: 550 }}>
+<datalist id="data1" >
 {university.map((university) => {
        return (
          <option value={university.name_uni}>{university.name_uni}</option>
@@ -151,7 +152,7 @@ const ViewEducationStudentAllStudent = () => {
             <FormGroup>
               <Label for="id_faculty">คณะ</Label>
               <Input type="text" list="data2" placeholder="กรุณาใส่ข้อมูล" name="name_faculty" id="name_faculty" value={filterInput.name_faculty}onChange={e => handleFilterCountries(e)} style={{textAlihn:'center',color:'green'}} />
-<datalist id="data2"  style={{ width: 550 }}>
+<datalist id="data2" >
 {faculty.map((faculty) => {
        return (
          <option value={faculty.name_faculty}>{faculty.name_faculty}</option>
@@ -167,7 +168,7 @@ const ViewEducationStudentAllStudent = () => {
             <FormGroup>
               <Label for="id_course">สาขา</Label>
               <Input type="text" list="data3" placeholder="กรุณาใส่ข้อมูล" name="name_course" id="name_course" value={filterInput.name_course}onChange={e => handleFilterCountries(e)} style={{textAlihn:'center',color:'green'}} />
-<datalist id="data3"  style={{ width: 550 }}>
+<datalist id="data3"  >
 {course.map((course) => {
        return (
          <option value={course.name_course}>{course.name_course}</option>
@@ -180,7 +181,7 @@ const ViewEducationStudentAllStudent = () => {
             <FormGroup>
               <Label for="id_major">กลุ่มสาขา</Label>
               <Input type="text" list="data4" placeholder="กรุณาใส่ข้อมูล" name="name_major" id="name_major" value={filterInput.name_major}onChange={e => handleFilterCountries(e)} style={{textAlihn:'center',color:'green'}} />
-<datalist id="data4"  style={{ width: 550 }}>
+<datalist id="data4"  >
 {groupmajor.map((groupmajor) => {
        return (
          <option value={groupmajor.name_major}>{groupmajor.name_major}</option>

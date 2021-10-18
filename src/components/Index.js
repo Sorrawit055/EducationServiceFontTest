@@ -212,18 +212,18 @@ function Index() {
             </div>
           </div> */}
               </div>
-           
-            </div>
-                
-            )
-        })}
-                    <div className="pt-36 md:pt-52 bg-yellow-600 mx-auto">
+              <div className="pt-36 md:pt-52 bg-yellow-600 mx-auto">
               <div className="mx-auto sm:text-center lg:text-left pb-12 md:pb-28">
    <SilderIndex />
 </div>
    <div className="pt-36 md:pt-52">
 </div>
    </div>
+            </div>
+                
+            )
+        })}
+                
    <div class="wow fadeInUpBig bg-fixed w-full h-72 md:h-96 bg-center overflow-y-1 shadow-inner" style={{ backgroundImage: `url("https://i.pinimg.com/originals/9a/05/4f/9a054f2b6398300e472f34a3b4f71984.jpg")`, filter: 'blur(0px)' }}>
           <h2 className="flex py-32 md:py-44 z-50 font-semibold justify-center">ประชาสัมพันธ์</h2>
         </div>
