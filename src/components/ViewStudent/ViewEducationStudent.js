@@ -32,6 +32,7 @@ const ViewEducationStudent = (props) => {
   }, []);
   return (
     <div class="mt-32">
+             <div class="container">
       <div className="flex flex-col max-w-7xl mx-auto">
         <div className="text-center mx-auto">
           <h3>ค้นหามหาวิทยาลัย</h3>
@@ -52,8 +53,10 @@ const ViewEducationStudent = (props) => {
             </Col>
           </Row>
         </div>
+        </div>
       </div>
       <br />
+      <div class="container">
       <div class="flex flex-col max-w-7xl mx-auto px-4">
         <div className="row row-cols-1 row-cols-md-2">
           {filteredData.map((value) => {
@@ -81,10 +84,7 @@ const ViewEducationStudent = (props) => {
           })}
         </div>
       </div>
-
-
-
-
+      </div>
     </div>
   );
 }
