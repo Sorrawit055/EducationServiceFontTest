@@ -189,10 +189,9 @@ function Index() {
                 <h1 className="text-center mx-auto text-3xl font-extrabold text-white sm:text-5xl md:text-6xl lg:text-7xl sm:max-w-5xl md:max-w-4xl lg:max-w-6xl">
                   <span className="block xl:inline">{namelogo.NameWeb}</span>{' '} </h1>
                   <h1 className="text-center mx-auto text-3xl font-extrabold text-white sm:text-5xl md:text-6xl lg:text-7xl sm:max-w-5xl md:max-w-4xl lg:max-w-6xl">
-                  <span className="block text-red-800 xl:inline">{namelogo.EngNameWeb || "EducationServiceWebsite"}</span>
-                </h1>
+                  <span className="block text-red-800 xl:inline">{namelogo.EngNameWeb || "EducationService"}</span>{' '}</h1>
                 <p className="mt-3 text-center text-base text-dark sm:mt-5 sm:text-lg sm:max-w-2xl sm:mx-auto md:mt-5">
-                  {namelogo.DetailWeb || "EducationServiceWebsite"}
+                  {namelogo.DetailWeb || "EducationService"}
                 </p>
                 {/* <div className="mr-3 ml-3 mt-3 sm:mt-8 sm:flex sm:justify-center">
             <div className="mt-2 sm:mt-0 sm:ml-3">

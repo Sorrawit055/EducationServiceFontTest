@@ -129,9 +129,10 @@ const ViewEducationStudentAllStudent = () => {
   return (
     
     <div class="mt-32">
-      
+       
       <div className="flex flex-col max-w-7xl mx-auto">
         <div className="text-center mx-auto">
+          
           <h3 className="pb-4">ค้นหาข้อมูลการรับสมัครเข้าศึกษาต่อ</h3>
           <hr  />
           <Row>
@@ -192,6 +193,7 @@ const ViewEducationStudentAllStudent = () => {
             </FormGroup>
           </Col>
         </Row>
+        <Row>
         <Col xs="12">
             <FormGroup>
               <center><Label for="id_major">GPAX(เกรดเฉลี่ยสะสม)</Label> </center>
@@ -200,6 +202,7 @@ const ViewEducationStudentAllStudent = () => {
               </Input>
             </FormGroup>
           </Col>
+          </Row>
         {/* <Row>
         <Col xs="4">
             <FormGroup>
@@ -231,14 +234,15 @@ const ViewEducationStudentAllStudent = () => {
 
         </div>
       </div>
+      <Row>
       <div class="flex flex-col max-w-7xl px-4 mx-auto pt-2">
         <div class="row row-cols-1 row-cols-md-2">
           {countriesList.map((country) => {
             return (
               <div class="col mb-4">
-                <Card>
-                  <CardImg width="10" className="mx-auto" src={country.image || 'https://via.placeholder.com/604x317'} />
-
+                <Row>
+                  <Card raised className="mx-auto">
+                  <CardImg width="100" className="mx-auto" src={country.image || 'https://via.placeholder.com/604x317'} style={{ width: '450px',height:'230px' }}/>
                   <CardBody>
                     <div className="lg:items-center lg:justify-between">
                       <div className="flex-1 min-w-0">
@@ -276,6 +280,7 @@ const ViewEducationStudentAllStudent = () => {
                     </div>
                   </CardBody>
                 </Card>
+                </Row>
               </div>
             );
           })}
@@ -298,7 +303,7 @@ const ViewEducationStudentAllStudent = () => {
 
         </div>
         <center> {countriesList.length === 0 && <span>ไม่พบข้อมูลที่ค้นหา</span>} </center>
-      </div>
+      </div> </Row>
     </div>
 
   );
