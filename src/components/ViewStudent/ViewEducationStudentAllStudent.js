@@ -129,7 +129,6 @@ const ViewEducationStudentAllStudent = () => {
   return (
     
     <div class="mt-32">
-       <div class="container">
       <div className="flex flex-col max-w-7xl mx-auto">
         <div className="text-center mx-auto">
           
@@ -202,7 +201,7 @@ const ViewEducationStudentAllStudent = () => {
               </Input>
             </FormGroup>
           </Col>
-          </Row></div>
+          </Row>
         {/* <Row>
         <Col xs="4">
             <FormGroup>
@@ -234,9 +233,7 @@ const ViewEducationStudentAllStudent = () => {
 
         </div>
       </div>
-      <br />
       <Row>
-      <div class="container">
       <div class="flex flex-col max-w-7xl px-4 mx-auto pt-2">
         <div class="row row-cols-1 row-cols-md-2">
           {countriesList.map((country) => {
@@ -286,7 +283,7 @@ const ViewEducationStudentAllStudent = () => {
               </div>
             );
           })}
-</div>
+
           {/* <Row>
         <Col>          
         <Card>
