@@ -81,53 +81,101 @@ const ViewDashboardTeacher = (props) => {
           <div className="mt-10">
             <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Main Menu</h2>
             <dl className="mt-4 space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-              {features.map((feature) => (
-                <a className="hover:no-underline" href={feature.href}>
-                  <div key={feature.name} className="relative">
+           
+                <a className="hover:no-underline" href="/Teacher/facultyall">
+                  <div className="relative">
                     <dt>
                       <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                        <feature.icon className="h-6 w-6" aria-hidden="true" />
+                        <LibraryIcon className="h-6 w-6" aria-hidden="true" />
                       </div>
-                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
+                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900" id="university" name="university">มหาวิทยาลัย</p>
                     </dt>
-                    <dd className="mt-2 ml-16 text-base text-gray-500">{feature.description}</dd>
+                    <dd className="mt-2 ml-16 text-base text-gray-500"></dd>
                   </div>
                 </a>
-              ))}
+
+                <a className="hover:no-underline" href="/Teacher/facultyall">
+                  <div className="relative">
+                    <dt>
+                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                        <OfficeBuildingIcon className="h-6 w-6" aria-hidden="true" />
+                      </div>
+                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900" id="faculty" name="faculty">คณะ</p>
+                    </dt>
+                    <dd className="mt-2 ml-16 text-base text-gray-500"></dd>
+                  </div>
+                </a>
+
+                <a className="hover:no-underline" href="/Teacher/courseall">
+                  <div className="relative">
+                    <dt>
+                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                        <UserIcon className="h-6 w-6" aria-hidden="true" />
+                      </div>
+                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900" id="course" name="course">สาขา</p>
+                    </dt>
+                    <dd className="mt-2 ml-16 text-base text-gray-500"></dd>
+                  </div>
+                </a>
+
+                <a className="hover:no-underline" href="/Teacher/groupcourseall">
+                  <div className="relative">
+                    <dt>
+                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                        <UserIcon className="h-6 w-6" aria-hidden="true" />
+                      </div>
+                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900" id="groupmajor" name="groupmajor">กลุ่มสาขา</p>
+                    </dt>
+                    <dd className="mt-2 ml-16 text-base text-gray-500"></dd>
+                  </div>
+                </a>
+
+                <a className="hover:no-underline" href="/Teacher/degreeall">
+                  <div className="relative">
+                    <dt>
+                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                        <AcademicCapIcon className="h-6 w-6" aria-hidden="true" />
+                      </div>
+                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900" id="degree" name="degree">คณะ</p>
+                    </dt>
+                    <dd className="mt-2 ml-16 text-base text-gray-500"></dd>
+                  </div>
+                </a>
             </dl>
+            
 
             <h2 className="mt-5 text-base text-indigo-600 font-semibold tracking-wide uppercase">University Information Menu</h2>
             <dl className="mt-4 space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-              {featuresUniversity.map((feature) => (
-                <a className="hover:no-underline" href={feature.href}>
-                  <div key={feature.name} className="relative">
+            
+                <a className="hover:no-underline" href="/Teacher/educationall">
+                  <div className="relative">
                     <dt>
                       <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                        <feature.icon className="h-6 w-6" aria-hidden="true" />
+                        <BookmarkAltIcon className="h-6 w-6" aria-hidden="true" />
                       </div>
-                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900" id={feature.name} name={feature.name}>{feature.name}</p>
+                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900" id="education" name="education">ข้อมูลการศึกษาต่อ</p>
                     </dt>
-                    <dd className="mt-2 ml-16 text-base text-gray-500">{feature.description}</dd>
+                    <dd className="mt-2 ml-16 text-base text-gray-500"></dd>
                   </div>
                 </a>
-              ))}
+             
             </dl>
 
             <h2 className="mt-5 text-base text-indigo-600 font-semibold tracking-wide uppercase">Student Information Menu</h2>
             <dl className="mt-4 space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-              {featuresStudent.map((feature) => (
-                <a className="hover:no-underline" href={feature.href}>
-                  <div key={feature.name} className="relative">
+            
+                <a className="hover:no-underline" href="/Teacher/educationstudentall">
+                  <div className="relative">
                     <dt>
                       <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                        <feature.icon className="h-6 w-6" aria-hidden="true" />
+                        <IdentificationIcon className="h-6 w-6" aria-hidden="true" />
                       </div>
-                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900" id={feature.name} name={feature.name} >{feature.name}</p>
+                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900" id="educationstudent" name="educationstudent">ข้อมูลการศึกษาต่อนักเรียน</p>
                     </dt>
-                    <dd className="mt-2 ml-16 text-base text-gray-500">{feature.description}</dd>
+                    <dd className="mt-2 ml-16 text-base text-gray-500"></dd>
                   </div>
                 </a>
-              ))}
+             
             </dl>
 
           </div>
