@@ -239,9 +239,9 @@ const ViewEducationStudentAllStudent = () => {
           {countriesList.map((country) => {
             return (
               <div class="col mb-4">
-                <Row>
+                
                   <Card raised className="mx-auto">
-                  <CardImg width="100" className="mx-auto" src={country.image || 'https://via.placeholder.com/604x317'} style={{ width: '450px',height:'230px' }}/>
+                  <CardImg width="100" className="mx-auto" src={country.image || 'https://via.placeholder.com/604x317'}style={{ width: '1250px',height:'250px' }}/>
                   <CardBody>
                     <div className="lg:items-center lg:justify-between">
                       <div className="flex-1 min-w-0">
@@ -279,7 +279,7 @@ const ViewEducationStudentAllStudent = () => {
                     </div>
                   </CardBody>
                 </Card>
-                </Row>
+             
               </div>
             );
           })}
