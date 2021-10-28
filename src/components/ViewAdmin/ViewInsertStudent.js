@@ -80,7 +80,7 @@ const ViewInsertStudent = () => {
       for(let i = 0 ; i<students.length ; i++){
         
         axios.post("https://educationservice.herokuapp.com/Staff/AddOneStudent", {
-                  "id_stu": students[i].id_stu ,
+                  "id_stu": students[i].id_stu,
                   "title": students[i].title,
                   "fname_stu": students[i].fname,
                   "lname_stu": students[i].lname,
@@ -216,10 +216,10 @@ const ViewInsertStudent = () => {
                               <div className="text-md text-gray-900">{students.title}</div>
                             </td>
                             <td className="px-6 py-4 whitespace-nowrap">
-                              <div className="text-md text-gray-900">{students.lname}</div>
+                              <div className="text-md text-gray-900">{students.fname}</div>
                             </td>
                             <td className="px-6 py-4 whitespace-nowrap">
-                              <div className="text-md text-gray-900">{students.fname}</div>
+                              <div className="text-md text-gray-900">{students.lname}</div>
                             </td>
                             <td className="px-6 py-4 whitespace-nowrap">
                               <div className="text-md text-gray-900">{students.year_class}</div>

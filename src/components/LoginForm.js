@@ -9,26 +9,7 @@ const LoginForm = () => {
         password_user: "",
     };
     const [user, setUser] = useState(log);
-    const session = {
-        id: localStorage.getItem('id'),
-        fname: localStorage.getItem('fname'),
-        lname: localStorage.getItem('lname'),
-        // id_staff: localStorage.getItem('id_staff'),
-        fname_staff: localStorage.getItem('fname_staff'),
-        lname_staff: localStorage.getItem('lname_staff'),
-        fname_admin: localStorage.getItem('fname_admin'),
-        lname_admin: localStorage.getItem('lname_admin'),
-        name_position: localStorage.getItem('name_position'),
 
-
-    }
-    // const sessionstaff = {
-    //     fname_staff: localStorage.getItem('fname_staff'),
-    //     lname_staff: localStorage.getItem('lname_staff'),
-    // }
-
-    const [ses, setSes] = useState(session);
-    // const [ses2, setSes2] = useState(sessionstaff);
 
     const inputdata = (event) => {
         let { name, value } = event.target;
@@ -45,6 +26,7 @@ const LoginForm = () => {
           console.log('Error getting fake data: ' + error);
         })
     }, []);
+    
     const saveStudent = async (e) => {
         e.preventDefault();
 

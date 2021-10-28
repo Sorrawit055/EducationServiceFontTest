@@ -116,7 +116,7 @@ const ViewEducationStudentData = ({ id }) => {
                         <div className="text-md text-gray-500">{value.id_stu}</div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="text-md text-gray-500">{value.fname_stu}  {value.lname_stu}</div>
+                        <div className="text-md text-gray-500">{value.fname_stu} {value.lname_stu}</div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="text-md text-gray-500">{value.year_class}/{value.class}</div>
