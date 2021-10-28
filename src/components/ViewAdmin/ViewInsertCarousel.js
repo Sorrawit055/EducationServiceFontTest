@@ -157,7 +157,7 @@ const ViewInsertCarousel = () => {
                 <div className="col text-center">
                     <Button type="submit" className="w-25 btn btn-success" >ตกลง</Button>
                 </div>
-            </Form>
+            </Form><br /><br />
         </div>
 
     )

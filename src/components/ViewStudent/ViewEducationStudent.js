@@ -7,8 +7,6 @@ import {
 import "./vieweducationstudent.css"
 
 const ViewEducationStudent = (props) => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const toggle = () => setDropdownOpen(prevState => !prevState);
   const [university, setUniversity] = useState([]);
   const [filteredData, setFilteredData] = useState(university);
 
