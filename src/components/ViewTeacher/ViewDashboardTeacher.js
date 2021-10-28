@@ -82,7 +82,7 @@ const ViewDashboardTeacher = (props) => {
             <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Main Menu</h2>
             <dl className="mt-4 space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
            
-                <a className="hover:no-underline" href="/Teacher/facultyall">
+                <a className="hover:no-underline" href="/Teacher/Universityall">
                   <div className="relative">
                     <dt>
                       <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
@@ -136,7 +136,7 @@ const ViewDashboardTeacher = (props) => {
                       <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
                         <AcademicCapIcon className="h-6 w-6" aria-hidden="true" />
                       </div>
-                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900" id="degree" name="degree">คณะ</p>
+                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900" id="degree" name="degree">หลักสูตร</p>
                     </dt>
                     <dd className="mt-2 ml-16 text-base text-gray-500"></dd>
                   </div>

@@ -84,7 +84,7 @@ const ViewDetailEducationStudent = ({ id }) => {
             </a>
           </div>
         </Form>
-
+        <br /><br />
       </div>
 
     );

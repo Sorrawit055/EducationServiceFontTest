@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Pagination from './pagination/paginationnewindex';
-import Paginations from './pagination/paginationnewindexstudent';
 import ViewDashBoardAdmin from './ViewAdmin/ViewDashBoardAdmin';
 import ViewDashboardTeacher from './ViewTeacher/ViewDashboardTeacher';
 import "../index.css"
